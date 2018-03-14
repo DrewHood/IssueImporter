@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3A8DEA9A20589C4C009BEA6C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEA9920589C4C009BEA6C /* main.swift */; };
+		3A8DEAA120589C98009BEA6C /* GitlabIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAA020589C98009BEA6C /* GitlabIssue.swift */; };
+		3A8DEAA320589E1C009BEA6C /* GithubIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAA220589E1B009BEA6C /* GithubIssue.swift */; };
+		3A8DEAA520589EA0009BEA6C /* GitlabComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAA420589EA0009BEA6C /* GitlabComment.swift */; };
+		3A8DEAA920589ED0009BEA6C /* GithubComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAA820589ED0009BEA6C /* GithubComment.swift */; };
+		3A8DEAAC2058A3D6009BEA6C /* URLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAAB2058A3D6009BEA6C /* URLSession+Synchronous.swift */; };
+		3A8DEAAE2058A6FF009BEA6C /* GitlabAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAAD2058A6FF009BEA6C /* GitlabAPI.swift */; };
+		3A8DEAB12058B92A009BEA6C /* GitlabObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAB02058B92A009BEA6C /* GitlabObject.swift */; };
+		3A8DEAB32058BE30009BEA6C /* GitlabUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAB22058BE30009BEA6C /* GitlabUser.swift */; };
+		3A8DEAB52058CA24009BEA6C /* GithubIssueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAB42058CA24009BEA6C /* GithubIssueWrapper.swift */; };
+		3A8DEAB92058CBB8009BEA6C /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DEAB82058CBB8009BEA6C /* GithubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +35,16 @@
 /* Begin PBXFileReference section */
 		3A8DEA9620589C4C009BEA6C /* IssueMigrator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IssueMigrator; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8DEA9920589C4C009BEA6C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3A8DEAA020589C98009BEA6C /* GitlabIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabIssue.swift; sourceTree = "<group>"; };
+		3A8DEAA220589E1B009BEA6C /* GithubIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssue.swift; sourceTree = "<group>"; };
+		3A8DEAA420589EA0009BEA6C /* GitlabComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabComment.swift; sourceTree = "<group>"; };
+		3A8DEAA820589ED0009BEA6C /* GithubComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubComment.swift; sourceTree = "<group>"; };
+		3A8DEAAB2058A3D6009BEA6C /* URLSession+Synchronous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Synchronous.swift"; sourceTree = "<group>"; };
+		3A8DEAAD2058A6FF009BEA6C /* GitlabAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabAPI.swift; sourceTree = "<group>"; };
+		3A8DEAB02058B92A009BEA6C /* GitlabObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabObject.swift; sourceTree = "<group>"; };
+		3A8DEAB22058BE30009BEA6C /* GitlabUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitlabUser.swift; sourceTree = "<group>"; };
+		3A8DEAB42058CA24009BEA6C /* GithubIssueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssueWrapper.swift; sourceTree = "<group>"; };
+		3A8DEAB82058CBB8009BEA6C /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +78,50 @@
 			isa = PBXGroup;
 			children = (
 				3A8DEA9920589C4C009BEA6C /* main.swift */,
+				3A8DEAAF2058A707009BEA6C /* API */,
+				3A8DEAA720589EB7009BEA6C /* Model */,
 			);
 			path = IssueMigrator;
+			sourceTree = "<group>";
+		};
+		3A8DEAA620589EA7009BEA6C /* GitlabModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A8DEAB02058B92A009BEA6C /* GitlabObject.swift */,
+				3A8DEAA020589C98009BEA6C /* GitlabIssue.swift */,
+				3A8DEAA420589EA0009BEA6C /* GitlabComment.swift */,
+				3A8DEAB22058BE30009BEA6C /* GitlabUser.swift */,
+			);
+			path = GitlabModel;
+			sourceTree = "<group>";
+		};
+		3A8DEAA720589EB7009BEA6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A8DEAA620589EA7009BEA6C /* GitlabModel */,
+				3A8DEAAA20589ED4009BEA6C /* GithubModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A8DEAAA20589ED4009BEA6C /* GithubModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A8DEAB42058CA24009BEA6C /* GithubIssueWrapper.swift */,
+				3A8DEAA220589E1B009BEA6C /* GithubIssue.swift */,
+				3A8DEAA820589ED0009BEA6C /* GithubComment.swift */,
+			);
+			path = GithubModel;
+			sourceTree = "<group>";
+		};
+		3A8DEAAF2058A707009BEA6C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3A8DEAAB2058A3D6009BEA6C /* URLSession+Synchronous.swift */,
+				3A8DEAAD2058A6FF009BEA6C /* GitlabAPI.swift */,
+				3A8DEAB82058CBB8009BEA6C /* GithubAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +182,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8DEAA520589EA0009BEA6C /* GitlabComment.swift in Sources */,
+				3A8DEAAE2058A6FF009BEA6C /* GitlabAPI.swift in Sources */,
+				3A8DEAA120589C98009BEA6C /* GitlabIssue.swift in Sources */,
+				3A8DEAAC2058A3D6009BEA6C /* URLSession+Synchronous.swift in Sources */,
+				3A8DEAB52058CA24009BEA6C /* GithubIssueWrapper.swift in Sources */,
+				3A8DEAA920589ED0009BEA6C /* GithubComment.swift in Sources */,
+				3A8DEAA320589E1C009BEA6C /* GithubIssue.swift in Sources */,
 				3A8DEA9A20589C4C009BEA6C /* main.swift in Sources */,
+				3A8DEAB12058B92A009BEA6C /* GitlabObject.swift in Sources */,
+				3A8DEAB92058CBB8009BEA6C /* GithubAPI.swift in Sources */,
+				3A8DEAB32058BE30009BEA6C /* GitlabUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,9 +308,11 @@
 		3A8DEA9E20589C4C009BEA6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMY896GMG4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -246,9 +320,11 @@
 		3A8DEA9F20589C4C009BEA6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMY896GMG4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
